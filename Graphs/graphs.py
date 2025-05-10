@@ -57,7 +57,7 @@ plt.savefig('img/sort_comparison.png', dpi=300, bbox_inches='tight')
 
 # График для пирамидальной сортировки
 plt.figure(figsize=(12, 6))
-plt.plot(sizes, heap_times, label='Пирамидальная сортировка', color='blue', marker='', linestyle='-', markersize=1)
+plt.plot(sizes, heap_times, label='Полученная зависимость', color='blue', marker='', linestyle='-', markersize=1)
 plt.plot(sizes, norm_theor_heap, label='Теоритическая зависимость O(n log n)', color='green', linestyle='--')
 plt.title('Зависимость времени выполнения пирамидальной сортировки')
 plt.xlabel('Количество элементов в массиве')
@@ -70,7 +70,7 @@ plt.close()
 
 # График для пузырьковой сортировки
 plt.figure(figsize=(12, 6))
-plt.plot(sizes, bubble_times, label='Пузырьковая сортировка', color='red', marker='', linestyle='-', markersize=1)
+plt.plot(sizes, bubble_times, label='Полученная зависимость', color='red', marker='', linestyle='-', markersize=1)
 plt.plot(sizes, norm_theor_bubble, label='Теоритическая зависимость O(n²)', color='green', linestyle='--')
 plt.title('Зависимость времени выполнения пузырьковой сортировки')
 plt.xlabel('Количество элементов в массиве')
